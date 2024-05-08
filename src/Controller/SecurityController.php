@@ -23,7 +23,7 @@ class SecurityController extends AbstractController
     public function login(SessionInterface $session,Request $request, AuthenticationUtils $authenticationUtils): Response
     {
         $users = $this->getDoctrine()->getRepository(User::class)->findAll();
-
+            //hhh
         // Récupérer les erreurs d'authentification, le dernier email saisi, etc.
         $error = $authenticationUtils->getLastAuthenticationError();
         $lastEmail = $authenticationUtils->getLastUsername();
